@@ -1,4 +1,4 @@
-start = '''
+tart = '''
 Welcome to the 2020 Tokyo Olympics!! It's been a great start to the games.
 Thank you for coming to support the swimmers competing today!
 '''
@@ -7,7 +7,7 @@ bec = '''
 Because you chose
 '''
 
-win = ''' you win!!! :-) '''
+win = " you win!!! :-) "
 
 lose = ''' you lost. :-((( '''
 
@@ -25,35 +25,43 @@ else: print('Please type in either Michael Phelps, Missy Franklin, Joshua Tibate
 
 coun = '''Please type in either USA, Uganda, Netherlands, or China. '''
 
+co = input('Enter which country you would like to represent.')
+
+swi = input('Please choose a swimmer: ' )
+
+st = input('Now choose which stroke you wish to compete with: ')
 
 done = False
 while not done:
-    co = input('Enter which country you would like to represent.')
     if co == 'USA':
-        swi = input('Please choose a swimmer: ' )
         if swi == 'Michael Phelps':
-            st = input('Now choose which stroke you wish to compete with: ')
             if st == 'freestyle':
                 print(bec, st, win)
+                done = True
             elif st == 'backstroke':
                 print(bec, st, lose)
+                done = True
             elif st == 'breastroke':
                 print(bec, st, lose)
+                done = True
             elif st == 'butterfly':
                 print(bec, st, win)
+                done = True
             else:
-                print('Please type in either freestyle, backstroke, breastroke, or butterfly.')
-            done = True
+                st = input("Please type in either freestyle, backstroke, breastroke, or butterfly: ")
         elif swi == 'Missy Franklin':
-            st = input('Now choose which stroke you wish to compete with: ')
             if st == 'freestyle':
                 print(bec, st, lose)
+                done = True
             elif st == 'backstroke':
                 print(bec, st, win)
+                done = True
             elif st == 'breastroke':
                 print(bec, st, lose)
+                done = True
             elif st == 'butterfly':
                 print(bec, st, lose)
+                done = True
             else:
                 print('Please type in either freestyle, backstroke, breastroke, or butterfly.')
             done = True
@@ -62,25 +70,32 @@ while not done:
         if swi == 'Joshua Timbatemwa':
             if st == 'freestyle':
                 print(bec, st, win)
+                done = True
             elif st == 'backstroke':
                 print(bec, st, lose)
+                done = True
             elif st == 'breastroke':
                 print(bec, st, lose)
+                done = True
             elif st == 'butterfly':
                 print(bec, st, lose)
+                done = True
             else:
                 print('Please type in either freestyle, backstroke, breastroke, or butterfly.')
             done = True
         elif swi == 'Jamila Lunkuse':
-            st = input('Now choose which stroke you wish to compete with: ')
             if st == 'freestyle':
                 print(bec, st, lose)
+                done = True
             elif st == 'backstroke':
                 print(bec, st, lose)
+                done = True
             elif st == 'breastroke':
                 print(bec, st, win)
+                done = True
             elif st == 'butterfly':
                 print(bec, st, lose)
+                done = True
             #done = True
             else:
                 print('Please type in either freestyle, backstroke, breastroke, or butterfly.')
@@ -88,29 +103,35 @@ while not done:
     elif co == 'Netherlands':
         swi = input('Please choose a swimmer: ')
         if swi == 'Pieter van den Hoogenband':
-            st = input('Now choose which stroke you wish to compete with: ')
             if st == 'freestyle':
                 print(bec, st, win)
+                done = True
             elif st == 'backstroke':
                 print(bec, st, lose)
+                done = True
             elif st == 'breastroke':
                 print(bec, st, lose)
+                done = True
             elif st == 'butterfly':
                 print(bec, st, lose)
+                done = True
             #done = True
             else:
                 print('Please type in either freestyle, backstroke, breastroke, or butterfly.')
             done = True
         elif swi == 'Jolanda de Rover':
-            st = input('Now choose which stroke you wish to compete with: ')
             if st == 'freestyle':
                 print(bec, st, lose)
+                done = True
             elif st == 'backstroke':
                 print(bec, st, win)
+                done = True
             elif st == 'breastroke':
                 print(bec, st, lose)
+                done = True
             elif st == 'butterfly':
                 print(bec, st, lose)
+                done = True
             #done = True
             else:
                 print('Please type in either freestyle, backstroke, breastroke, or butterfly.')
@@ -118,32 +139,39 @@ while not done:
     elif co == 'China':
         swi = input('Please choose a swimmer: ' )
         if swi == 'Sun Yang':
-            st = input('Now choose which stroke you wish to compete with: ')
             #done = True
             if st == 'freestyle':
                 print(bec, st, win)
+                done = True
             elif st == 'backstroke':
                 print(bec, st, lose)
+                done = True
             elif st == 'breastroke':
                 print(bec, st, lose)
+                done = True
             elif st == 'butterfly':
                 print(bec, st, lose)
+                done = True
             else:
                 print('Please type in either freestyle, backstroke, breastroke, or butterfly.')
             done = True
         elif swi == 'Fu Yuanhui':
-            st = input('Now choose which stroke you wish to compete with: ')
             if st == 'freestyle':
                 print(bec, st, lose)
+                done = True
             elif st == 'backstroke':
                 print(bec, st, win)
+                done = True
             elif st == 'breastroke':
                 print(bec, st, lose)
+                done = True
             elif st == 'butterfly':
                 print(bec, st, lose)
+                done = True
             else:
                 print('Please type in either freestyle, backstroke, breastroke, or butterfly.')
             done = True
-        else: print(pp)
+        else:
+            swi = input('Please choose a swimmer: ' )
     else:
-        print(coun)
+        co = input('Enter which country you would like to represent.')
