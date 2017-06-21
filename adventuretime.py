@@ -1,4 +1,4 @@
-tart = '''
+start = '''
 Welcome to the 2020 Tokyo Olympics!! It's been a great start to the games.
 Thank you for coming to support the swimmers competing today!
 '''
