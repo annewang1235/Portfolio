@@ -1,0 +1,57 @@
+body {
+
+    background-image: url("images/calla_lillies2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.div1 {
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-size: 55px;
+    color: #b3ffd9;
+    font-family: "Cedarville Cursive";
+    font-weight: bold;
+
+}
+}
+
+.nav {
+    border:3px solid #b3ffd9 ;
+
+    border-radius: 3px;
+    border-width: 1px 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+/*#b3ffd9*/
+  color: #b3ffd9;
+  font-family: "Cedarville Crusive";
+  font-style: normal;
+  font-size: 25px;
+  padding: 3px;
+  margin: 132px;
+
+}
+
+
+
+
+
+
+}
+}
